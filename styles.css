@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #555;
+}
+
+.clock {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#timer-display {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#timer-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}

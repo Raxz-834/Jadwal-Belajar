@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Belajar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Belajar</h1>
+        <div class="clock" id="clock"></div>
+        <div class="form">
+            <input type="text" id="new-task" placeholder="Masukkan aktivitas">
+            <input type="number" id="activity-duration" placeholder="Durasi aktivitas (menit)">
+            <input type="number" id="rest-times" placeholder="Jumlah istirahat">
+            <input type="number" id="rest-duration" placeholder="Durasi istirahat (menit)">
+            <button onclick="addTask()">Tambah Aktivitas</button>
+        </div>
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Aktivitas</th>
+                    <th>Durasi Aktivitas</th>
+                    <th>Istirahat</th>
+                   asdas <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+                <!-- Tasks will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <div id="notification" class="notification hidden">
+            <p>Waktu selesai! Tekan OK untuk menutup</p>
+            <button onclick="closeNotification()">OK</button>
+        </div>
+        <div id="timer-container">
+            <div id="timer-display">00:00</div>
+            <button onclick="startTimer()">Mulai</button>
+            <button onclick="pauseTimer()">Jeda</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        <audio id="end-sound" src="end-sound.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
